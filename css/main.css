@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer myComponents {
+	.invalid {
+		@apply outline-strawberryRed outline-2 outline;
+	}
+
+	aside li span.active {
+		@apply bg-pastelBlue text-marineBlue !border-pastelBlue;
+	}
+
+	.active {
+		@apply bg-alabaster !border-purplishBlue;
+	}
+
+	.confirm {
+		@apply !bg-purplishBlue;
+	}
+
+	input[type="number"] {
+		appearance: textfield;
+		-moz-appearance: textfield;
+	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+	.good {
+		@apply outline-green-600 outline
+	}
+	.error.valid {
+		@apply !text-green-600
+	}
+}
